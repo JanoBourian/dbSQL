@@ -15,4 +15,7 @@
 - Tabla fuerte y tabla débil
 
 ## 3FN
+- La tabla debe estar en 2FN
+- Ningún atributo no primario de la tabla debe tener una dependencia transitiva con una clave primaria.
+- Eliminar dependencia multivaluada. 
 

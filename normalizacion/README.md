@@ -1,1 +1,18 @@
 # Normalización
+
+## 1FN
+- No debe ser necesario un orden alfabético
+- Sin filas duplicadas
+- Datos atómicos
+- Siempre se debe tener una clave primaria
+- Sin valores Nulos
+- Un campo no debe tener más de un dato en su dominio de columna
+
+## 2FN
+- La tabla debe estar en 1FN
+- Identificar la dependencia entre los campos y la clave primaria 
+- Todo atributo debe depender de toda la clave primaria
+- Tabla fuerte y tabla débil
+
+## 3FN
+

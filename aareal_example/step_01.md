@@ -13,7 +13,7 @@ CREATE TABLE Usuario(
     CorreoElectronico VARCHAR(20) NOT NULL, 
     Contrasena VARCHAR(50) NOT NULL,
     Edad TINYINT(2) NOT NULL,
-    PRIMART KEY (IdUsuario) 
+    PRIMARY KEY (IdUsuario) 
 );
 
 ## Tabla Post

@@ -6,38 +6,53 @@ SHOW TABLES;
 # Inserciones
 ## Inserción de 5 usuarios
 INSERT INTO Usuario VALUES(NULL, 'Francisco', 'Gonzalez', 'Antonio', 'seissixer@nube.unadmexico.mx', 'default', '1990-09-19', 'M');
+
 INSERT INTO Usuario VALUES(NULL, 'Abelardo', 'Sanchez', 'Urrutia', 'abelardo@mail.com', 'default', '1990-09-20', 'M');
+
 INSERT INTO Usuario VALUES(NULL, 'Pedro', 'Rivaz', 'Gómez', 'pedror@mail.com', 'default', '1990-09-21', 'M');
+
 INSERT INTO Usuario VALUES(NULL, 'Martha', 'Malverde', 'Ruiz', 'mmruiz@mail.com', 'default', '1990-09-22', 'F');
+
 INSERT INTO Usuario VALUES(NULL, 'Fernando', 'Vallejo', 'Mattus', 'fvallejo@mail.com', 'default', '1990-09-23', 'M');
 
 ## Inserción de 2 post por usuario
 INSERT INTO Post VALUES(null, 'Francisco01', null, 1);
+
 INSERT INTO Post VALUES(null, 'Francisco02', null, 1);
 
 INSERT INTO Post VALUES(null, 'Abelardo01', null, 2);
+
 INSERT INTO Post VALUES(null, 'Abelardo02', null, 2);
 
 INSERT INTO Post VALUES(null, 'Pedro01', null, 3);
+
 INSERT INTO Post VALUES(null, 'Pedro02', null, 3);
 
 INSERT INTO Post VALUES(null, 'Martha01', null, 4);
+
 INSERT INTO Post VALUES(null, 'Martha02', null, 4);
 
 INSERT INTO Post VALUES(null, 'Fernando01', null, 5);
+
 INSERT INTO Post VALUES(null, 'Fernando02', null, 5);
 
 ## Inserción de 5 registros en la tabla comentario
 INSERT INTO Comentario VALUES(null, 'Comentario01', null, 1, 5);
+
 INSERT INTO Comentario VALUES(null, 'Comentario02', null, 3, 4);
+
 INSERT INTO Comentario VALUES(null, 'Comentario03', null, 5, 1);
+
 INSERT INTO Comentario VALUES(null, 'Comentario04', null, 7, 3);
+
 INSERT INTO Comentario VALUES(null, 'Comentario05', null, 9, 2);
 
 
 ## Inserción de 3 registros en la tabla amigo
 INSERT INTO Amigo VALUES(null, 1, 3, null);
+
 INSERT INTO Amigo VALUES(null, 2, 4, null);
+
 INSERT INTO Amigo VALUES(null, 5, 1, null);
 
 # Consultas

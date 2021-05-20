@@ -59,35 +59,105 @@ CREATE TABLE TipoMovimiento(
 #### Usuario
 
 CREATE TABLE Usuario(
+    
     IDUsuario INT AUTO_INCREMENT NOT NULL, 
+
     IDTipoUsuario INT NOT NULL,
+
     IDSeccion INT NOT NULL, 
+
     NombreUsuario VARCHAR(50) UNIQUE NOT NULL, 
+
     Contrasena VARCHAR(50) NOT NULL,
+
     Correo VARCHAR(50) UNIQUE NOT NULL,  
+
     FechaCreacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+
     PRIMARY KEY (IDUsuario),
+
     CONSTRAINT FK_IDTipoUsuario FOREIGN KEY (IDTipoUsuario) REFERENCES TipoUsuario (IDTipoUsuario)
+
 );
 
 #### Movimiento
 
 CREATE TABLE Movimiento(
     IDMovimiento INT AUTO_INCREMENT NOT NULL, 
+
     ID_Area INT NOT NULL, 
+
     ID_TipoMovimiento INT NOT NULL, 
+
     ID_Usuario INT NOT NULL,
+
     Descripcion VARCHAR(50) NOT NULL, 
+
     Monto DOUBLE NOT NULL, 
+
     FechaMovimiento TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     PRIMARY KEY (IDMovimiento),
+
     CONSTRAINT FK_IDArea FOREIGN KEY (ID_Area) REFERENCES Area (IDArea),
+
     CONSTRAINT FKIDTipoMovimiento FOREIGN KEY (ID_TipoMovimiento) REFERENCES TipoMovimiento (IDTipoMovimiento),
+
     CONSTRAINT FKIDUsuario FOREIGN KEY (ID_Usuario) REFERENCES Usuario (IDUsuario)
+
 );
 
 ### Inserción de registros
+#### TipoUsuario
+INSERT INTO TipoUsuario VALUES(NULL, 'Delegada');
 
+INSERT INTO TipoUsuario VALUES(NULL, 'Ayudante');
+
+INSERT INTO TipoUsuario VALUES(NULL, 'Presidente');
+
+SELECT * FROM TipoUsuario; 
+
+#### Seccion 
+INSERT INTO Seccion VALUES(NULL, 'Delegacion');
+
+INSERT INTO Seccion VALUES(NULL, 'COPACI');
+
+INSERT INTO Seccion VALUES(NULL, 'Ayuda Externa');
+
+SELECT * FROM Seccion;
+
+#### Area
+INSERT INTO Area VALUES(NULL, 'Salon de fiestas', 'Salon de fiestas para diversos eventos');
+
+INSERT INTO Area VALUES(NULL, 'Parque', 'Area de canchas');
+
+INSERT INTO Area VALUES(NULL, 'Gastos Plataforma', 'Tecnologia e IT');
+
+SELECT * FROM Area;
+
+#### TipoMovimiento
+INSERT INTO TipoMovimiento VALUES(NULL, 'Ingreso' );
+
+INSERT INTO TipoMovimiento VALUES(NULL, 'Egreso' );
+
+SELECT * FROM TipoMovimiento; 
+
+#### Usuario
+INSERT INTO Usuario VALUES(NULL, 1, 1, 'Alejandra Villanueva', 'password', 'alejandrav@delegacion.com', NULL);
+
+INSERT INTO Usuario VALUES(NULL, 3, 2, 'Salvador Vallejo', 'password', 'salvadorv@copaci.com', NULL);
+
+INSERT INTO Usuario VALUES(NULL, 2, 3, 'Francisco Gonzalez', 'password', 'fgonzaleza@master.com', NULL);
+
+SELECT * FROM Usuario; 
+
+#### Movimiento
+INSERT INTO Movimiento VALUES(NULL, 1, 1, 1, 'Pago de fiesta infantil', 1500.00, NULL);
+
+INSERT INTO Movimiento VALUES(NULL, 1, 2, 1, 'Limpieza salon', 150.00, NULL);
+
+INSERT INTO Movimiento VALUES(NULL, 3, 2, 3, 'Diseno de base de datos', 1000.00, NULL);
+
+SELECT * FROM Movimiento; 
 
 ### Creación de ROL
 

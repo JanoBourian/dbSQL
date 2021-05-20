@@ -161,12 +161,13 @@ SELECT * FROM Movimiento;
 
 ### Creación de ROL
 CREATE ROLE IF NOT EXISTS 'capturista';
+
 GRANT SELECT, INSERT ON gestor.* TO 'capturista';
 
 ### Creación de Usuario
-CREATE USER 'usuario01'@'localhost' IDENTIFIED BY 'password1234';
-GRANT 'capturista' TO 'usuario01'@'localhost';
-FLUSH PRIVILEGES; 
+CREATE USER 'capturista01'@'localhost' IDENTIFIED BY 'password1234';
+
+GRANT 'capturista' TO 'capturista01'@'localhost';
 
 ### Ingreso Con Usuario
 Aquí sólo se realiza la captura de datos
@@ -176,9 +177,10 @@ DELETE FROM Usuario where IDUsuario = 1;
 
 ### ROL Gestor
 CREATE ROLE IF NOT EXISTS 'gestion';
-GRANT ALL PRIVILIEGES ON gestor.* TO 'gestion';
+
+GRANT ALL PRIVILEGES ON gestor.* TO 'gestion';
 
 ### Usuario con nuevo ROL
-CREATE USER 'usuario02'@'localhost' IDENTIFIED BY 'password1234';
-GRANT 'gestion' TO 'usuario02'@'localhost';
-FLUSH PRIVILEGES;
+CREATE USER 'gestor01'@'localhost' IDENTIFIED BY 'password1234';
+
+GRANT 'gestion' TO 'gestor01'@'localhost';

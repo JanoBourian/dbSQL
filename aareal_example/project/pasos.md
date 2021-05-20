@@ -160,19 +160,25 @@ INSERT INTO Movimiento VALUES(NULL, 3, 2, 3, 'Diseno de base de datos', 1000.00,
 SELECT * FROM Movimiento; 
 
 ### Creación de ROL
-
+CREATE ROLE IF NOT EXISTS 'capturista';
+GRANT SELECT, INSERT ON gestor.* TO 'capturista';
 
 ### Creación de Usuario
-
+CREATE USER 'usuario01'@'localhost' IDENTIFIED BY 'password1234';
+GRANT 'capturista' TO 'usuario01'@'localhost';
+FLUSH PRIVILEGES; 
 
 ### Ingreso Con Usuario
-
+Aquí sólo se realiza la captura de datos
 
 ### Ejecución de DELETE
-
+DELETE FROM Usuario where IDUsuario = 1;
 
 ### ROL Gestor
-
+CREATE ROLE IF NOT EXISTS 'gestion';
+GRANT ALL PRIVILIEGES ON gestor.* TO 'gestion';
 
 ### Usuario con nuevo ROL
-
+CREATE USER 'usuario02'@'localhost' IDENTIFIED BY 'password1234';
+GRANT 'gestion' TO 'usuario02'@'localhost';
+FLUSH PRIVILEGES;

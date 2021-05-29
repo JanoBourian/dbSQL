@@ -51,3 +51,5 @@ SELECT * FROM usuarios LIMIT 0, 2; --- desde el registro cero traeme dos valores
 ### Eliminar
 DELET FROM usuarios WHERE id_usuario = 2; 
 
+### Borrar tabla
+DROP TABLE <table_name>

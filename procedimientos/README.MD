@@ -85,4 +85,4 @@ DROP VIEW vwCurso_Nombre_Creditos;
 
 CREATE INDEX ixAlumno_ApellidoPaterno ON alumno (ApellidoPaterno); 
 
-DROP INDEX ixAlumno_ApellidoPaterno;
+ALTER TABLE alumno DROP INDEX ixAlumno_ApellidoPaterno;

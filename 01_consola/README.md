@@ -5,6 +5,11 @@ C:\xampp\mysql\bin>mysql -u root -p
 
 Enter password: 
 
+# Docker container
+
+docker exec -it mysqlcontainer mysql -p
+
+Enter password: 
 
 ## Comandos 
 

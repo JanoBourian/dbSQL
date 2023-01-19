@@ -16,6 +16,8 @@ Enter password:
 ### Miscelanea
 SHOW DATABASES;
 
+CREATE DATABASE database_name;
+
 USE <db_name>; 
 
 SHOW TABLES; 
@@ -27,6 +29,8 @@ CREATE DATABASE consola;
 
 CREATE TABLE usuarios (id_usuario INT AUTO_INCREMENT NOT NULL, nombre VARCHAR(100) UNIQUE NOT NULL, correo VARCHAR(50) UNIQUE NOT NULL, PRIMARY KEY (id_usuario) );
 
+
+CREATE TABLE carrera (codigo TINYINT AUTO_INCREMENT NOT NULL, nombre VARCHAR(50) UNIQUE NOT NULL, PRIMARY KEY(codigo));
 
 ### Insertar
 INSERT INTO <table_name> VALUES(null, 'master_user', 'mu@system.com');

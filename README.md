@@ -338,6 +338,44 @@ DISTINCT
 
 ## Store Procedures, Funtioncs, Triggers, Index
 
+For more information check: **06_procedimientos**
+
+```sql
+CREATE PROCEDURE
+
+BEGIN
+
+INSERT INTO
+
+END
+
+CALL
+
+DROP PROCEDURE
+
+CREATE FUNCTION
+
+RETURN BIGINT
+
+RETURN 
+
+CREATE TRIGGER
+
+BEFORE INSERT ON
+
+FOR EACH ROW BEGIN
+
+IF - THEN
+
+DROP TRIGGER
+
+TRUNCATE
+
+CREATE VIEW
+
+CREATE INDEX
+```
+
 <hr>
 
 ## Access and Backup

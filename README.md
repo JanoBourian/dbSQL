@@ -272,6 +272,36 @@ INSERT INTO matricula VALUES (NULL, 3, 2, "2021-01-07");
 
 For more information you can check **03_manipulacion**
 
+```sql
+SELECT
+
+INSERT
+
+UPDATE
+
+DELETE
+
+WHERE
+
+IF
+
+CASE - WHEN
+
+BETWEEN
+
+LIKE
+
+IN
+
+ALTER
+
+IS NOT NULL
+
+IS NULL
+
+ORDER BY
+```
+
 <hr>
 
 ## Aditional Functions

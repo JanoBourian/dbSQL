@@ -81,15 +81,21 @@ docker run -d -p 33060:3306 --name mysqlcontainer -e MYSQL_ROOT_PASSWORD=simplep
 docker exec -it mysqlcontainer mysql -p
 ```
 
+<hr>
+
 ## Introduction
 
 Database is a set of information relationed.
 SGBD: MySQL, MariaDB, Oracel, Microsoft SQL Server.
+
 Relations:
+
     - Many-to-Many: (N:N) Product-Sale
     - One-to-Many: (1:M) Debt-Client
     - One-to-One: (1:1) Person-Family
+    
 SQL (Structure Query Language): SQL is the standard, but each DBGS decide the implementation
+
     - Types:
         - String
         - Integer
@@ -106,6 +112,7 @@ SQL (Structure Query Language): SQL is the standard, but each DBGS decide the im
         - double
         - datetime
         - blob: Binary information as file o text
+        
     - Transaction:
         - Has only two results: done and fail, doesn't exist middle state.
         - Should abide ACID properties:
@@ -113,19 +120,24 @@ SQL (Structure Query Language): SQL is the standard, but each DBGS decide the im
             - Concistency: No affect the data structure
             - Isolation: Only one, altough exist another
             - Durability: The future changes will be permanents.
+
     - Categories:
+
         - DDL: Data Definition Languages 
             - CREATE: Create a new table, database or schema
             - ALTER: Modify already exists table o column properties
             - DROP: Delete some object already exists in database
+
         - DML: Data Manipulation Languages (CRUD)
             - SELECT: Select item 
             - INSERT: Insert item inside a table
             - UPDATE: Update item
             - DELETE: Delete item
+
         - DCL: Data Control Language (about users)
             - GRANT: Allow users
             - REVOKE: Revoke permissions
+            
         - TCL: Transaction Control Language
             - COMMIT: Save information
             - ROLLBACK: Back to last state.
@@ -138,13 +150,21 @@ At this point we are using a docker container. But also we are using DBeaver and
 docker exec -it mysqlcontainer mysql -p
 ```
 
-For this topics please check: **01_consola**
+<hr>
 
 ## Normalization
 
+We are looking for a database optimization
+
+This topic is in: **01_normalizacion**
+
+<hr>
 
 ## Design and Creation
 
+For this topics please check: **02_consola**
+
+<hr>
 
 ## Manipulation using SQL queries
 

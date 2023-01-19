@@ -10,6 +10,7 @@
 
 ## 2FN
 - La tabla debe estar en 1FN
+- Romper dependencias funcionales
 - Identificar la dependencia entre los campos y la clave primaria 
 - Todo atributo debe depender de toda la clave primaria
 - Tabla fuerte y tabla débil
@@ -17,5 +18,4 @@
 ## 3FN
 - La tabla debe estar en 2FN
 - Ningún atributo no primario de la tabla debe tener una dependencia transitiva con una clave primaria.
-- Eliminar dependencia multivaluada. 
-
+- Eliminar dependencia multivaluada (Conjunto de registros independientes que están en un mismo registro)

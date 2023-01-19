@@ -310,6 +310,30 @@ ORDER BY
 
 ## Group Tables
 
+For more information **05_agrupamiento**
+
+```sql
+UNION
+
+UNION ALL
+
+JOIN
+
+INNER JOIN
+
+ON
+
+LEFT JOIN
+
+RIGHT JOIN
+
+GROUP BY
+
+HAVING 
+
+DISTINCT 
+```
+
 <hr>
 
 ## Store Procedures, Funtioncs, Triggers, Index

@@ -112,6 +112,8 @@ SELECT * FROM prueba;
 ## List objects inside a table
 
 ```sql
+\l 
+\c <database_name>
 \d <table_name>
 \dt
 \h

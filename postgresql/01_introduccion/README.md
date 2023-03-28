@@ -112,11 +112,16 @@ SELECT * FROM prueba;
 ## List objects inside a table
 
 ```sql
-\l 
+\l # List databases
 \c <database_name>
 \d <table_name>
 \dt
 \h
 \h ALTER
 \q 
+\du 
+```
+
+```sql
+ALTER USER myusername WITH PASSWORD 'mysecretpassword';
 ```

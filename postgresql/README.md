@@ -9,7 +9,7 @@ docker run -d \
 	-e POSTGRES_USER=myusername \
 	-e PGDATA=/var/lib/postgresql/data/pgdata \
 	-p 5432:5432 \
-	-v C:\\Users\\super\\Documents\\databases\\postgrescourse:/var/lib/postgresql/data \
+	-v C:\\Users\\super\\Documents\\databases\\course:/var/lib/postgresql/data \
 	-d postgres
 ```
 

@@ -129,5 +129,5 @@ SELECT * FROM prueba;
 ```
 
 ```sql
-ALTER USER myusername WITH PASSWORD 'mysecretpassword';
+ALTER USER postgres WITH PASSWORD 'mysecretpassword';
 ```

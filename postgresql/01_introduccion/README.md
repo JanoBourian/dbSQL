@@ -23,6 +23,12 @@ For this course we are going to use a Docker container instead of use a database
 * date
 * timestamp
 
+## Create database
+
+```sql
+CREATE DATABASE store;
+```
+
 ## Create tables
 
 Create table directly:

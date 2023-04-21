@@ -118,6 +118,7 @@ SELECT * FROM prueba;
 ## List objects inside a table
 
 ```sql
+CREATE DATABASE clothes;
 \l # List databases
 \c <database_name>
 \d <table_name>

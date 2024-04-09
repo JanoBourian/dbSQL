@@ -13,15 +13,3 @@ CREATE TABLE IF NOT EXISTS fake.fake_survey_information(
 INSERT INTO fake.fake_survey_information(score_id, score, created_at)
 VALUES (gen_random_uuid(), floor(random() * 5 + 1)::int, now());
 ```
-
-```sql
-```
-
-```sql
-```
-
-```sql
-```
-
-```sql
-```

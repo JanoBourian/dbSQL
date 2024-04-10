@@ -22,3 +22,8 @@ SELECT username, COUNT(contract_number)
 FROM table1
 GROUP BY username;
 ```
+
+- MIN() and MAX()
+- AVG([DISTINCT] expression)
+- SUM([DISTINCT] expression)
+- ORDER BY column1 ASC|DESC

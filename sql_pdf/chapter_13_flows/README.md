@@ -20,4 +20,16 @@ SELECT table_alias.column1, table_alias.column2,
 FROM table.tablename AS table_alias;
 ```
 
-## IF Function
+## IF Function (only for MySQL)
+
+```sql
+SELECT *
+IF (condition, true_value, false_value)
+FROM tablename;
+```
+
+```sql
+SELECT *
+IF (column1 > val, 'big', 'small') AS alias
+FROM tablename;
+```

@@ -95,4 +95,23 @@ END; $$
 
 ## Triggers
 
+```sql
+ALTER TABLE fake.income_by_city
+ADD country VARCHAR(255);
+
+CREATE OR REPLACE PROCEDURE fake.sp_income_by_city_updated()
+LANGUAGE plpgsql
+AS $$
+DECLARE
+BEGIN
+	UPDATE fake.income_by_city
+    SET updated_at = NOW();
+END;
+$$;
+
+CREATE TRIGGER income_by_city_updated
+BEFORE UPDATE
+ON fake.income_by_city FOR EACH ROW
+EXECUTE PROCEDURE fake.sp_income_by_city_updated();
+```
 
